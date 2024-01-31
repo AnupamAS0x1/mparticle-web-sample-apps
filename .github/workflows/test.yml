@@ -1,0 +1,13 @@
+name: Release Higgs Shop
+
+on:
+  pull_request:
+    branches: [ main ]  # or the branch you want to target
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  # or another runner environment
+
+    steps:
+    - uses: actions/checkout@v2
+      # Add additional steps here to build/test your code
